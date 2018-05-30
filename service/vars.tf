@@ -1,0 +1,107 @@
+variable "cluster_name" {}
+variable "environment" {}
+variable "region" {}
+variable "vpc_id" {}
+variable "service_name" {}
+variable "service_url" {}
+variable "service_domain" {}
+variable "service_role" {}
+variable "is_internal" {}
+variable "dns_zone_id" {}
+variable "iam_task_role" {}
+variable "tg_port" {}
+variable "tg_protocol" {}
+variable "log_group" {}
+variable "log_retention" {}
+variable "task_family" {}
+variable "template_file" {}
+variable "desired_count" {}
+variable "container_name" {}
+variable "container_port" {}
+variable "healthcheck_healthy" {}
+variable "healthcheck_unhealthy" {}
+variable "healthcheck_path" {}
+variable "healthcheck_protocol" {}
+variable "healthcheck_interval" {}
+variable "healthcheck_timeout" {}
+variable "stick_type" {}
+variable "stick_duration" {}
+variable "stick_enabled" {}
+variable "ecr_repository_url" {}
+variable "ecr_repository_tag" {}
+variable "alb_name" {}
+variable "alb_zone" {}
+variable "alb_listener_80" {}
+variable "alb_listener_443" {}
+variable "alb_listener_rule_priority" {}
+variable "cluster_id" {}
+variable "max_service_capacity" {}
+variable "min_service_capacity" {}
+variable "ecs_cluster_name" {}
+variable "svc_cpu_high" {}
+variable "svc_alarm_cpu_high_operator" {}
+variable "svc_alarm_cpu_high_periods" {}
+variable "svc_alarm_cpu_high_period_length" {}
+variable "svc_alarm_cpu_high_threshold" {}
+variable "svc_cpu_low" {}
+variable "svc_alarm_cpu_low_operator" {}
+variable "svc_alarm_cpu_low_periods" {}
+variable "svc_alarm_cpu_low_period_length" {}
+variable "svc_alarm_cpu_low_threshold" {}
+
+/* External Resources Vars */
+variable "create_s3_bucket_user" {}
+variable "create_s3_bucket" {}
+variable "s3_bucket_name" {}
+variable "create_db" {}
+variable "cors_allowed_headers" { type = "list" }
+variable "cors_allowed_methods" { type = "list" }
+variable "cors_allowed_origins" { type = "list" }
+variable "timezone" {}
+variable "owner" {}
+variable "tool" {}
+variable "db_instance_name" {}
+variable "db_engine_type" {}
+variable "db_engine_version" {}
+variable "db_storage_type" {}
+variable "db_storage_size" {}
+variable "db_instance_class" {}
+variable "db_name" {}
+variable "db_username" {}
+variable "db_parameter_group" {}
+variable "db_backup_retention_period" {}
+variable "db_backup_window" {}
+variable "db_maintenance_window" {}
+variable "db_multi_az" {}
+variable "db_public" {}
+variable "private_subnets" { type = "list" }
+variable "default_vpc" {}
+variable "default_vpc_cidr" {}
+variable "create_redis" {}
+variable "redis_name" {}
+variable "redis_engine_version" {}
+variable "redis_node_type" {}
+variable "redis_parameter_group" {}
+variable "redis_backup_window" {}
+variable "redis_backup_retention_period" {}
+variable "redis_maintenance_window" {}
+variable "create_cf_distribution" {}
+variable "cf_dist_enabled" {}
+variable "cf_dist_ipv6" {}
+variable "cf_dist_root_object" {}
+variable "cf_dist_fw_query_string" {}
+variable "cf_dist_fw_headers" { type = "list" }
+variable "cf_dist_fw_cookies" {}
+variable "cf_dist_protocol_policy" {}
+variable "cf_dist_min_ttl" {}
+variable "cf_dist_default_ttl" {}
+variable "cf_dist_max_ttl" {}
+variable "cf_dist_price_class" {}
+variable "cf_dist_restriction_type" {}
+variable "cf_dist_restriction_locations" { type = "list" }
+variable "cf_origin_http_port" {}
+variable "cf_origin_https_port" {}
+variable "cf_origin_protocol_policy" {}
+variable "cf_origin_ssl_protocols" { type = "list" }
+variable "cf_origin_keepalive_timeout" {}
+variable "cf_origin_read_timeout" {}

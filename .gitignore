@@ -1,0 +1,9 @@
+.DS_Store
+playbook.retry
+.vagrant
+
+#terraform stuff
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
