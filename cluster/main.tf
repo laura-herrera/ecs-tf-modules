@@ -239,7 +239,7 @@ resource "aws_iam_role_policy" "ecs" {
         "s3:GetObject"
       ],
       "Resource": [
-        "arn:aws:s3:::knyttan-private/Docker/*"
+        "arn:aws:s3:::private/Docker/*"
       ]
     },
     {
